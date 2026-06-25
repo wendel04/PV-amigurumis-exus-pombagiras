@@ -1,0 +1,882 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Biblioteca de Exus e Pombagiras em Amigurumi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <script>
+        window.pixelId = "6a3d34bc1bae5a7def2ef36a";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <script
+        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+        data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids
+        async
+        defer
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+        p,
+        li,
+        details summary + div {
+            font-weight: 500 !important;
+        }
+        h1, h2, h3, h4, h5, h6,
+        a,
+        button,
+        summary,
+        strong,
+        b,
+        .price-text,
+        .keep-bold {
+            font-weight: 800 !important;
+        }
+        h1,
+        h2,
+        .price-text {
+            font-weight: 900 !important;
+            letter-spacing: -0.035em;
+        }
+        h3,
+        h4,
+        summary,
+        a,
+        button {
+            letter-spacing: -0.02em;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary .faq-icon { transform: rotate(180deg); }
+        .mockup-card {
+            background: transparent;
+            border: 0 !important;
+            box-shadow: none !important;
+        }
+        .real-mockup-img {
+            max-height: 124%;
+            width: 124%;
+            object-fit: contain;
+            filter: drop-shadow(0 22px 24px rgba(0, 0, 0, 0.16));
+        }
+        .hero-mockup-wrap {
+            margin-top: 1rem !important;
+            margin-bottom: 5rem !important;
+        }
+        .hero-bullets > div {
+            font-weight: 600 !important;
+        }
+        .ideal-card {
+            background: #ecfff4;
+            border: 1.5px solid #71e39c;
+            box-shadow: 0 8px 20px rgba(0, 150, 70, 0.10);
+            min-height: 150px;
+        }
+        @keyframes arrowDownPulse {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(7px); }
+        }
+        .animated-down-arrow {
+            animation: arrowDownPulse 1s ease-in-out infinite;
+        }
+        .carousel-img {
+            width: 100%;
+            height: 24rem;
+            object-fit: contain;
+        }
+        .custom-check {
+            width: 3rem;
+            height: 3rem;
+            flex: 0 0 3rem;
+            object-fit: contain;
+            display: block;
+        }
+        @media (max-width: 1024px) {
+            body { font-size: 14px; }
+
+            section {
+                padding-top: 2.5rem !important;
+                padding-bottom: 2.5rem !important;
+            }
+
+            h1 {
+                font-size: 1.82rem !important;
+                line-height: 1.12 !important;
+                margin-bottom: 1rem !important;
+            }
+
+            h2 {
+                font-size: 1.42rem !important;
+                line-height: 1.18 !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            h3 {
+                font-size: 1.05rem !important;
+                line-height: 1.25 !important;
+            }
+
+            p,
+            li {
+                line-height: 1.45 !important;
+            }
+
+            .aspect-video {
+                aspect-ratio: auto !important;
+                height: auto !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .hero-mockup-wrap {
+                margin-top: 1.75rem !important;
+                margin-bottom: 5.25rem !important;
+            }
+
+            .mockup-card {
+                min-height: 0 !important;
+                border-radius: 1.25rem !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+            }
+
+            .mockup-card .rounded-3xl,
+            .rounded-\[2rem\] {
+                border-radius: 1.1rem !important;
+            }
+
+            .mockup-card .text-2xl,
+            .mockup-card .text-3xl {
+                font-size: 1.25rem !important;
+            }
+
+            .mockup-card .text-6xl {
+                font-size: 2.5rem !important;
+                margin-bottom: 0.75rem !important;
+            }
+
+            .mockup-card .w-20,
+            .mockup-card .h-20 {
+                width: 3.4rem !important;
+                height: 3.4rem !important;
+                font-size: 1.7rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+
+            .model-carousel {
+                gap: 0.75rem !important;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .model-carousel > div {
+                width: min(86vw, 21rem) !important;
+            }
+
+            .model-carousel > div > div {
+                height: 23rem !important;
+                padding: 0 !important;
+                border-radius: 0 !important;
+                background: transparent !important;
+                border: 0 !important;
+                box-shadow: none !important;
+            }
+
+            .carousel-img {
+                height: 23rem !important;
+            }
+
+            .real-mockup-img {
+                max-height: 25rem !important;
+                width: 132% !important;
+            }
+
+            .model-carousel .text-5xl {
+                font-size: 2rem !important;
+            }
+
+            .model-carousel h3 {
+                font-size: 1.05rem !important;
+            }
+
+            .model-carousel p {
+                font-size: 0.7rem !important;
+            }
+
+            .grid {
+                gap: 0.85rem !important;
+            }
+
+            .ideal-card {
+                min-height: 132px !important;
+                width: 100%;
+            }
+
+            .p-4 {
+                padding: 0.85rem !important;
+            }
+
+            .p-5,
+            .p-6,
+            .p-8,
+            .p-10 {
+                padding: 1rem !important;
+            }
+
+            .mb-6,
+            .mb-8,
+            .mb-10,
+            .mb-12,
+            .mb-16 {
+                margin-bottom: 1.25rem !important;
+            }
+
+            .mt-10,
+            .mt-12,
+            .mt-14,
+            .mt-16 {
+                margin-top: 1.5rem !important;
+            }
+
+            .min-h-\[420px\] {
+                min-height: 250px !important;
+            }
+
+            .h-44 {
+                height: 13rem !important;
+            }
+
+            .h-48 {
+                height: auto !important;
+                min-height: 8.5rem !important;
+            }
+
+            .text-4xl,
+            .text-\[46px\],
+            .text-\[52px\] {
+                font-size: 1.8rem !important;
+            }
+
+            .text-3xl {
+                font-size: 1.45rem !important;
+            }
+
+            a.rounded-full {
+                padding-top: 0.9rem !important;
+                padding-bottom: 0.9rem !important;
+                font-size: 0.82rem !important;
+            }
+
+            details summary {
+                padding: 1rem !important;
+                font-size: 0.85rem !important;
+            }
+
+            details summary + div {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                padding-bottom: 1rem !important;
+            }
+
+            #sales-notification {
+                top: 0.75rem !important;
+                left: 0.75rem !important;
+                width: 15.5rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#fff7f0] text-zinc-900 antialiased selection:bg-lime-500 selection:text-zinc-900 pb-0 overflow-x-hidden">
+
+    <!-- FAIXA DE TOPO -->
+    <div class="bg-[#ef5b4d] text-white text-center py-2 px-2 sm:px-4 text-[11px] sm:text-sm font-bold text-balance">
+        ATENÇÃO OFERTA VALIDA APENAS HOJE
+    </div>
+
+    <!-- BLOCO 1: VENDA IMEDIATA -->
+    <section class="bg-[#fff4dc] text-zinc-900 pt-10 pb-16 sm:pt-12 sm:pb-20 px-4 border-t border-black/5">
+        <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+            <div class="inline-flex items-center gap-1.5 sm:gap-2 bg-blue-100 text-blue-700 px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-sm font-bold mb-6 whitespace-nowrap tracking-wide">
+                🔒 COMPRA 100% SEGURA E PROTEGIDA
+            </div>
+
+            <h1 class="text-[26px] sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 sm:mb-8 text-balance">
+                Tenha + de 100 modelos de Exus e Pombagiras em amigurumi <span class="text-blue-600">prontos para você produzir.</span>
+            </h1>
+
+            <div class="hero-mockup-wrap w-full max-w-4xl aspect-video flex items-center justify-center mb-8 sm:mb-10 relative">
+                <div class="mockup-card w-full h-full flex items-center justify-center p-0 relative overflow-visible">
+                    <img src="https://i.postimg.cc/J4v7pWBc/6.png" alt="Mockup principal da Biblioteca de Exus e Pombagiras em Amigurumi" class="real-mockup-img" fetchpriority="high">
+                </div>
+            </div>
+
+            <p class="text-sm sm:text-lg md:text-xl text-zinc-600 mb-8 max-w-2xl font-bold text-balance px-2">
+                Tenha acesso a um pack com modelo em PDF prontos e organizados por entidade para criar, colecionar, presentear ou vender peças espirituais únicas.
+            </p>
+
+            <div class="hero-bullets flex flex-col gap-2.5 sm:gap-3 w-full max-w-xl mb-8 px-2">
+                <div class="bg-blue-50 border border-blue-100 rounded-full px-4 sm:px-5 py-3 text-left text-xs sm:text-sm flex items-center gap-3 shadow-sm"><span class="text-blue-600 shrink-0">✓</span> <span>Mais de 100 modelos de Exus e Pombagiras</span></div>
+                <div class="bg-blue-50 border border-blue-100 rounded-full px-4 sm:px-5 py-3 text-left text-xs sm:text-sm flex items-center gap-3 shadow-sm"><span class="text-blue-600 shrink-0">✓</span> <span>Fotos de referência para ver cores e detalhes</span></div>
+                <div class="bg-blue-50 border border-blue-100 rounded-full px-4 sm:px-5 py-3 text-left text-xs sm:text-sm flex items-center gap-3 shadow-sm"><span class="text-blue-600 shrink-0">✓</span> <span>Modelos separados por entidade</span></div>
+                <div class="bg-blue-50 border border-blue-100 rounded-full px-4 sm:px-5 py-3 text-left text-xs sm:text-sm flex items-center gap-3 shadow-sm"><span class="text-blue-600 shrink-0">✓</span> <span>Peças para quem ama artesanato e espiritualidade</span></div>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 sm:gap-4 w-full px-2">
+                <a href="#oferta" class="w-full sm:w-auto bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold text-sm sm:text-xl px-4 sm:px-12 py-4 sm:py-5 rounded-full transition-colors duration-300 shadow-[0_0_20px_rgba(163,230,53,0.4)] uppercase tracking-wide">
+                    ACESSAR PACK AGORA
+                </a>
+                <p class="text-zinc-500 text-xs sm:text-sm flex items-center gap-1.5 whitespace-nowrap font-bold">
+                    <i class="ph-fill ph-shield-check text-base"></i> Compra segura. Acesso digital. 15 dias de garantia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 2: DEMONSTRATIVO -->
+    <section class="bg-[#f8dfad] py-12 sm:py-16 relative border-t border-black/5">
+        <div class="max-w-6xl mx-auto px-4 mb-6 sm:mb-8 text-center">
+            <h2 class="text-[22px] sm:text-3xl font-bold text-zinc-900 text-balance leading-snug">VEJA COMO OS MODELOS FICAM ORGANIZADOS DENTRO DO PACK</h2>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto w-full overflow-hidden space-y-3 sm:space-y-5">
+            <div class="relative w-full overflow-hidden">
+                <div class="absolute inset-y-0 left-0 w-8 sm:w-16 md:w-32 bg-gradient-to-r from-[#f8dfad] to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute inset-y-0 right-0 w-8 sm:w-16 md:w-32 bg-gradient-to-l from-[#f8dfad] to-transparent z-10 pointer-events-none"></div>
+
+                <div id="auto-carousel-top" class="model-carousel flex gap-4 sm:gap-6 overflow-x-auto touch-pan-x hide-scrollbar py-2 sm:py-4 px-8 sm:px-16 md:px-32 items-center">
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/s23kcnKY/Passo-a-passo-Exu-caveira.png" alt="Foto de modelo do pack 1" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/cJdpmDTw/Passo-a-passo-Exu-laroye.png" alt="Foto de modelo do pack 2" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/q7pPLmQ8/Passo-a-passo-Exu-Marabo.png" alt="Foto de modelo do pack 3" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/TPTz9kQj/Passo-a-passo-Exu-mirim.png" alt="Foto de modelo do pack 4" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/pdPwZ0kq/Passo-a-passo-Exu-tranca-ruas.png" alt="Foto de modelo do pack 5" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-full overflow-hidden">
+                <div class="absolute inset-y-0 left-0 w-8 sm:w-16 md:w-32 bg-gradient-to-r from-[#f8dfad] to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute inset-y-0 right-0 w-8 sm:w-16 md:w-32 bg-gradient-to-l from-[#f8dfad] to-transparent z-10 pointer-events-none"></div>
+
+                <div id="auto-carousel-bottom" class="model-carousel flex gap-4 sm:gap-6 overflow-x-auto touch-pan-x hide-scrollbar py-2 sm:py-4 px-8 sm:px-16 md:px-32 items-center">
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/YSt53X8d/Passo-a-passo-maaria-padilha.png" alt="Foto de modelo do pack 6" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/pdPwZ0kc/Passo-a-passo-Maria-navalha.png" alt="Foto de modelo do pack 7" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/43XD58wF/Passo-a-passo-preta-velha.png" alt="Foto de modelo do pack 8" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/pdPwZ0k6/Passo-a-passo-preto-velho.png" alt="Foto de modelo do pack 9" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="flex-none w-56 sm:w-72 md:w-80">
+                        <div class="h-96 flex items-center justify-center p-0 hover:scale-105 transition-transform duration-700">
+                            <img src="https://i.postimg.cc/rpqBJhg3/Passo-a-passo-Rosa-Caveira.png" alt="Foto de modelo do pack 10" class="carousel-img" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 sm:mt-14 px-4">
+                <div class="w-full max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-5 sm:gap-8 text-center">
+                        <div class="flex flex-col sm:flex-row md:flex-col items-center justify-center gap-3">
+                            <span class="text-5xl leading-none">📥</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-zinc-950">Baixe o modelo</h3>
+                        </div>
+                        <div class="text-4xl sm:text-6xl text-green-600 font-bold rotate-90 md:rotate-0">→</div>
+                        <div class="flex flex-col sm:flex-row md:flex-col items-center justify-center gap-3">
+                            <span class="text-5xl leading-none">🧶</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-zinc-950">Siga o passo a passo</h3>
+                        </div>
+                        <div class="text-4xl sm:text-6xl text-green-600 font-bold rotate-90 md:rotate-0">→</div>
+                        <div class="flex flex-col sm:flex-row md:flex-col items-center justify-center gap-3">
+                            <span class="text-5xl leading-none">✨</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-zinc-950">Tenha seu amigurumi pronto</h3>
+                        </div>
+                    </div>
+                    <div class="mt-8 sm:mt-12 flex justify-center">
+                        <img src="https://i.postimg.cc/pdPwZ0kc/Passo-a-passo-Maria-navalha.png" alt="Entregável estático do passo a passo Maria Navalha" class="w-full max-w-sm sm:max-w-md h-auto object-contain drop-shadow-2xl" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 3: BENEFÍCIOS DO PRODUTO -->
+    <section class="bg-[#f3e8d8] text-zinc-900 py-16 sm:py-20 px-4 border-y border-black/5">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-center mb-12 sm:mb-16 text-balance leading-snug">TUDO PARA VOCÊ COMEÇAR A FAZER HOJE</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5 items-stretch">
+                <div class="bg-white border border-zinc-200 p-5 sm:p-6 rounded-2xl flex items-center gap-4 sm:gap-5 text-left shadow-sm h-full">
+                    <div class="text-5xl sm:text-6xl leading-none shrink-0">🧶</div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-zinc-900 mb-2">Você não começa mais do zero</h3>
+                        <p class="text-sm sm:text-base text-zinc-600 font-bold leading-relaxed">Modelos prontos para você escolher e começar sua peça com mais facilidade.</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-zinc-200 p-5 sm:p-6 rounded-2xl flex items-center gap-4 sm:gap-5 text-left shadow-sm h-full">
+                    <div class="text-5xl sm:text-6xl leading-none shrink-0">📚</div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-zinc-900 mb-2">Todas as entidades prontas</h3>
+                        <p class="text-sm sm:text-base text-zinc-600 font-bold leading-relaxed">Biblioteca organizada com Exus e Pombagiras para consultar sempre que precisar.</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-zinc-200 p-5 sm:p-6 rounded-2xl flex items-center gap-4 sm:gap-5 text-left shadow-sm h-full">
+                    <div class="text-5xl sm:text-6xl leading-none shrink-0">🎁</div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-zinc-900 mb-2">Presentes com mais significado</h3>
+                        <p class="text-sm sm:text-base text-zinc-600 font-bold leading-relaxed">Crie peças feitas à mão com propósito para presentear pessoas especiais.</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-zinc-200 p-5 sm:p-6 rounded-2xl flex items-center gap-4 sm:gap-5 text-left shadow-sm h-full">
+                    <div class="text-5xl sm:text-6xl leading-none shrink-0">✨</div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-zinc-900 mb-2">Mais conexão espiritual</h3>
+                        <p class="text-sm sm:text-base text-zinc-600 font-bold leading-relaxed">Produza amigurumis simbólicos que unem artesanato, fé e intenção.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 4: HEADLINE DE URGÊNCIA + BOTÃO -->
+    <section class="bg-[#ef5b4d] py-16 sm:py-20 px-4 border-t border-black/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center justify-center gap-2 rounded-full bg-white/35 border border-white/45 px-4 sm:px-5 py-2 mb-7 sm:mb-9 text-zinc-900 shadow-sm backdrop-blur-sm">
+                <span class="keep-bold text-[11px] sm:text-sm uppercase tracking-wide">Oferta acaba em</span>
+                <span id="urgency-timer" class="keep-bold text-base sm:text-xl leading-none tabular-nums">10:00</span>
+            </div>
+            <h2 class="text-[24px] sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-5 sm:mb-6 text-balance leading-tight">
+                TENHA AGORA O NOSSO PACK COMPLETO COM TODAS AS ENTIDADES, E SE CONECTE MAIS COM A SUA ESPIRITUALIDADE.
+            </h2>
+            <p class="text-zinc-700 font-bold text-sm sm:text-xl mb-8">Aproveite a oferta por tempo limitado</p>
+            <a href="#oferta" class="inline-block w-full sm:w-auto bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold text-sm sm:text-lg px-4 sm:px-10 py-4 sm:py-5 rounded-full transition-colors shadow-[0_0_20px_rgba(163,230,53,0.3)] uppercase tracking-wide">
+                ACESSAR PACK AGORA
+            </a>
+        </div>
+    </section>
+
+    <!-- BLOCO 5: IDEAL PARA VOCÊ QUE DESEJA -->
+    <section class="bg-[#fff7f9] py-16 sm:py-20 px-4 border-t border-black/5">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-center text-zinc-900 mb-10 sm:mb-12 text-balance leading-snug">O NOSSO PACK É IDEAL PARA VOCÊ QUE QUER:</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+                <div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5">
+                    <img src="https://i.postimg.cc/Dz61JcCv/download.png" alt="" class="custom-check" loading="eager" decoding="async">
+                    <h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Produzir modelos de Exus e Pombagiras sem começar do zero</h3>
+                </div>
+                <div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5">
+                    <img src="https://i.postimg.cc/Dz61JcCv/download.png" alt="" class="custom-check" loading="eager" decoding="async">
+                    <h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Criar peças espirituais únicas e cheias de significado</h3>
+                </div>
+                <div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5">
+                    <img src="https://i.postimg.cc/Dz61JcCv/download.png" alt="" class="custom-check" loading="eager" decoding="async">
+                    <h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Montar uma coleção exclusiva de amigurumis espirituais</h3>
+                </div>
+                <div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5">
+                    <img src="https://i.postimg.cc/Dz61JcCv/download.png" alt="" class="custom-check" loading="eager" decoding="async">
+                    <h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Presentear alguém com uma peça feita à mão e com propósito</h3>
+                </div>
+                <div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5 md:col-span-2 lg:col-span-1">
+                    <img src="https://i.postimg.cc/Dz61JcCv/download.png" alt="" class="custom-check" loading="eager" decoding="async">
+                    <h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Vender peças diferentes das que outras artesãs vendem</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 6: TUDO O QUE VOCÊ VAI RECEBER -->
+    <section class="bg-[#3b1a0b] py-16 sm:py-20 px-4 border-y border-[#2a1208]">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-8 text-balance leading-snug">TUDO O QUE VOCÊ VAI RECEBER NO NOSSO PACK</h2>
+            <div class="mx-auto h-80 sm:h-[500px] flex items-center justify-center overflow-visible mb-6 sm:mb-8">
+                <img src="https://i.postimg.cc/J4v7pWBc/6.png" alt="Mockup principal do pack completo" class="w-[112%] h-[112%] object-contain drop-shadow-2xl" loading="lazy" decoding="async">
+            </div>
+            <div class="bg-white text-zinc-900 rounded-xl border border-blue-100 shadow-2xl max-w-3xl mx-auto p-6 sm:p-8 text-left">
+                <h3 class="font-bold text-zinc-950 text-center text-base sm:text-lg mb-2">Você vai receber:</h3>
+                <p class="text-center text-zinc-500 text-xs sm:text-sm font-bold mb-6">Tudo organizado para facilitar sua produção e consulta.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-x-8 sm:gap-y-5 mb-6 text-xs sm:text-sm font-bold">
+                    <li class="flex items-center gap-3 text-zinc-700"><span class="text-lg shrink-0">🧶</span> Mais de 100 modelos prontos</li>
+                    <li class="flex items-center gap-3 text-zinc-700"><span class="text-lg shrink-0">📄</span> Modelos em PDF</li>
+                    <li class="flex items-center gap-3 text-zinc-700"><span class="text-lg shrink-0">📸</span> Fotos de referência</li>
+                    <li class="flex items-center gap-3 text-zinc-700"><span class="text-lg shrink-0">🗂️</span> Modelos organizados por entidade</li>
+                    <li class="flex items-center gap-3 text-zinc-700"><span class="text-lg shrink-0">🔥</span> Modelos de Exus</li>
+                    <li class="flex items-center gap-3 text-zinc-700"><span class="text-lg shrink-0">🌹</span> Modelos de Pombagiras</li>
+                    <li class="flex items-center gap-3 text-zinc-700"><span class="text-lg shrink-0">✨</span> Inspirações para uso pessoal ou venda</li>
+                    <li class="flex items-center gap-3 text-zinc-700"><span class="text-lg shrink-0">🔄</span> Atualizações futuras</li>
+                    <li class="flex items-center gap-3 text-[#20c95d] sm:col-span-2"><span class="text-lg shrink-0">🔓</span> Acesso vitalício</li>
+                </ul>
+                <div class="border-t border-zinc-200 pt-5 text-center">
+                    <p class="font-bold text-blue-700 text-xs sm:text-sm uppercase mb-6">E muito mais…</p>
+                    <a href="#oferta" class="inline-block w-full sm:w-auto bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold text-sm sm:text-lg px-4 sm:px-12 py-4 sm:py-5 rounded-full transition-colors shadow-[0_0_24px_rgba(163,230,53,0.45)] uppercase tracking-wide text-center">
+                        ACESSAR PACK AGORA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 7: BÔNUS -->
+    <section class="bg-[#f8dfad] py-16 sm:py-20 px-4 border-t border-black/5">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-center text-zinc-900 mb-10 sm:mb-12 text-balance leading-snug">VOCÊ RECEBE 5 BÔNUS EXCLUSIVOS</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col">
+                    <div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible">
+                        <img src="https://i.postimg.cc/9FKXLjqb/bonus-1.png" alt="Mockup bônus 1" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 sm:p-7 flex flex-col flex-1">
+                        <h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> Bônus 1</h3>
+                        <h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">Kit de Acabamento e Apresentação</h4>
+                        <p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Orientações para deixar as peças mais bonitas, bem finalizadas e com aparência mais profissional.</p>
+                        <div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> BÔNUS GRATUITO HOJE</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col">
+                    <div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible">
+                        <img src="https://i.postimg.cc/dtpQ5KT2/bonus-2.png" alt="Mockup bônus 2" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 sm:p-7 flex flex-col flex-1">
+                        <h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> Bônus 2</h3>
+                        <h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">Lista de Materiais para Amigurumis Espirituais</h4>
+                        <p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Ajuda a separar fios, cores, detalhes e itens antes de começar a produção.</p>
+                        <div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> BÔNUS GRATUITO HOJE</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col">
+                    <div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible">
+                        <img src="https://i.postimg.cc/c421FN85/bonus-3.png" alt="Mockup bônus 3" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 sm:p-7 flex flex-col flex-1">
+                        <h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> Bônus 3</h3>
+                        <h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">Guia de Organização da Coleção</h4>
+                        <p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Ajuda a planejar quais entidades produzir primeiro e como montar uma coleção completa.</p>
+                        <div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> BÔNUS GRATUITO HOJE</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col">
+                    <div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible">
+                        <img src="https://i.postimg.cc/CLXMcVfQ/bonus-4.png" alt="Mockup bônus 4" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 sm:p-7 flex flex-col flex-1">
+                        <h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> Bônus 4</h3>
+                        <h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">Ficha de Identidade Simbólica das Entidades</h4>
+                        <p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Material complementar para organizar nome, características visuais, cores e detalhes de cada inspiração.</p>
+                        <div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> BÔNUS GRATUITO HOJE</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col">
+                    <div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible">
+                        <img src="https://i.postimg.cc/hP642q7Z/bonus-5.png" alt="Mockup bônus 5" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 sm:p-7 flex flex-col flex-1">
+                        <h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> Bônus 5</h3>
+                        <h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">Acesso ao Grupo de Artesãs no WhatsApp</h4>
+                        <p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Espaço para troca, inspiração, dúvidas e conexão com outras artesãs do mesmo nicho.</p>
+                        <div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> BÔNUS GRATUITO HOJE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 8: OFERTA E VALORES -->
+    <section id="oferta" class="bg-[#2a1208] py-16 sm:py-24 px-4 text-white relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h2 class="text-[26px] sm:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16 text-balance leading-tight">ESCOLHA O SEU PACOTE</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
+                <div class="bg-white text-zinc-900 rounded-2xl p-6 sm:p-8 border border-blue-100 shadow-2xl flex flex-col">
+                    <h3 class="text-xl sm:text-2xl font-bold text-center mb-6 uppercase">Pacote Básico</h3>
+                    <div class="h-60 sm:h-72 flex items-center justify-center text-center font-bold text-blue-700 mb-7 p-0 overflow-visible">
+                        <img src="https://i.postimg.cc/YqZ2dwm1/5.png" alt="Mockup do pacote básico" class="w-[112%] h-[112%] object-contain drop-shadow-xl" loading="lazy" decoding="async">
+                    </div>
+                    <ul class="space-y-4 mb-10 text-xs sm:text-sm font-bold text-zinc-700">
+                        <li class="flex gap-3"><span class="shrink-0">🧶</span><span>Mais de 100 modelos de Exus e Pombagiras em amigurumi</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">📄</span><span>Receitas em PDF</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">📸</span><span>Fotos de referência</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">🗂️</span><span>Modelos organizados por entidade</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">🔥</span><span>Inspirações de Exus</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">🌹</span><span>Inspirações de Pombagiras</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">✨</span><span>Uso pessoal ou comercial</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">🔄</span><span>Atualizações futuras da Biblioteca</span></li>
+                    </ul>
+                    <div class="mt-auto text-center">
+                        <p class="price-text text-green-600 font-bold text-2xl sm:text-3xl mb-5">Por apenas R$27,90</p>
+                        <a href="#" class="block w-full bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold py-4 sm:py-5 rounded-full transition-colors uppercase text-xs sm:text-sm px-4 shadow-[0_10px_25px_rgba(163,230,53,0.35)]">QUERO PACOTE BÁSICO</a>
+                        <div class="mt-6 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-red-600 shadow-sm">
+                            <div class="animated-down-arrow keep-bold text-2xl leading-none mb-1">↓</div>
+                            <p class="keep-bold text-xs sm:text-sm leading-snug">Por apenas R$10 a mais, você ganha mais 5 bônus exclusivos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white text-zinc-900 rounded-2xl p-6 sm:p-8 border-2 border-blue-400 shadow-[0_0_35px_rgba(59,130,246,0.55)] flex flex-col relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-lime-400 text-blue-800 rounded-full px-5 py-2 font-bold text-[11px] sm:text-xs uppercase shadow-lg whitespace-nowrap">⭐ Escolha mais vantajosa</div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-center mb-6 mt-3 uppercase text-blue-600">Pacote Completo</h3>
+                    <div class="h-72 sm:h-80 flex items-center justify-center text-center font-bold text-[#20c95d] mt-5 mb-7 p-0 overflow-visible relative">
+                        <div class="absolute top-4 left-1/2 -translate-x-1/2 -rotate-6 bg-yellow-300 text-zinc-950 px-4 py-1 rounded text-[10px] font-bold uppercase shadow-md z-10">Mais vendido</div>
+                        <img src="https://i.postimg.cc/J4v7pWBc/6.png" alt="Mockup do pacote completo" class="w-[124%] h-[124%] object-contain drop-shadow-xl" loading="lazy" decoding="async">
+                    </div>
+                    <div class="mx-auto mb-7 rounded-full bg-green-50 border border-green-200 px-4 py-2 text-green-700 text-[11px] sm:text-xs font-bold">+ bônus exclusivos incluídos</div>
+                    <ul class="space-y-4 mb-6 text-xs sm:text-sm font-bold text-zinc-700">
+                        <li class="flex gap-3"><span class="shrink-0">🧶</span><span>Mais de 100 modelos de Exus e Pombagiras em amigurumi</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">📄</span><span>Receitas em PDF</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">📸</span><span>Fotos de referência</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">🗂️</span><span>Modelos organizados por entidade</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">🔥</span><span>Inspirações de Exus</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">🌹</span><span>Inspirações de Pombagiras</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">✨</span><span>Uso pessoal ou comercial</span></li>
+                        <li class="flex gap-3"><span class="shrink-0">🔄</span><span>Atualizações futuras da Biblioteca</span></li>
+                    </ul>
+                    <div class="border border-blue-100 rounded-xl p-5 mb-8 bg-blue-50/60 shadow-sm">
+                        <h4 class="text-blue-700 font-bold text-xs uppercase tracking-wide mb-4">🎁 BÔNUS EXCLUSIVOS:</h4>
+                        <ul class="space-y-3 text-xs sm:text-sm font-bold text-zinc-800">
+                            <li>🎁 Bônus #1 — Kit de Acabamento e Apresentação</li>
+                            <li>🧵 Bônus #2 — Lista de Materiais para Amigurumis Espirituais</li>
+                            <li>🗂️ Bônus #3 — Guia de Organização da Coleção</li>
+                            <li>🌹 Bônus #4 — Ficha de Identidade Simbólica das Entidades</li>
+                            <li>📲 Bônus #5 — Acesso ao Grupo de Artesãs no WhatsApp</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto text-center">
+                        <p class="price-text text-green-600 font-bold text-2xl sm:text-3xl mb-5">Hoje por apenas R$37,90</p>
+                        <a href="#" class="block w-full bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold py-4 sm:py-5 rounded-full transition-colors uppercase text-xs sm:text-sm px-4 shadow-[0_10px_25px_rgba(163,230,53,0.35)]">QUERO PACOTE COMPLETO</a>
+                        <div class="mt-5 pt-5 border-t border-zinc-200 flex justify-center">
+                            <img src="https://i.postimg.cc/4dLhqKp8/garantia-15-dias.png" alt="Selo de garantia de 15 dias" class="w-full max-w-xs h-auto object-contain" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO OPCIONAL: GARANTIA -->
+    <section class="bg-[#eef8fb] py-16 sm:py-20 px-4 border-t border-black/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mx-auto mb-6 flex items-center justify-center">
+                <img src="https://i.postimg.cc/V6QFrg9S/selo-de-garantia-15-dias.png" alt="Selo de garantia de 15 dias" class="w-36 sm:w-44 h-auto object-contain drop-shadow-xl" loading="lazy" decoding="async">
+            </div>
+            <h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-zinc-900 mb-6 text-balance leading-snug">VOCÊ PODE ACESSAR COM TRANQUILIDADE</h2>
+            <p class="text-zinc-600 font-bold text-sm sm:text-lg leading-relaxed mb-3">Acesse a Biblioteca de Exus e Pombagiras em Amigurumi com tranquilidade.</p>
+            <p class="text-zinc-600 font-bold text-sm sm:text-lg leading-relaxed mb-3">Você tem 15 dias para conhecer e usar o material.</p>
+            <p class="text-zinc-600 font-bold text-sm sm:text-lg leading-relaxed mb-8">Se você sentir que a Biblioteca não é para você, basta solicitar o reembolso e seu dinheiro será devolvido.</p>
+            <a href="#oferta" class="inline-block w-full sm:w-auto bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold text-sm sm:text-lg px-4 sm:px-10 py-4 sm:py-5 rounded-full transition-colors shadow-[0_0_20px_rgba(163,230,53,0.3)] uppercase tracking-wide">
+                ACESSAR PACK AGORA
+            </a>
+        </div>
+    </section>
+
+    <!-- BLOCO OPCIONAL: COMO EU ACESSO -->
+    <section class="bg-white py-16 sm:py-20 px-4 border-t border-black/5">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-[28px] sm:text-4xl md:text-5xl font-bold text-center text-zinc-900 mb-2 text-balance leading-tight">COMO VAI SER SEU ACESSO</h2>
+            <p class="text-center text-zinc-900 font-bold text-sm sm:text-base mb-10 sm:mb-14 uppercase">(Passo a passo)</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10">
+                <div class="text-center">
+                    <div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">🛒</div>
+                    <h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">✅ Escolha seu plano</h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed font-bold">Você escolhe entre o Plano Básico ou o Plano Completo com os bônus.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">💳</div>
+                    <h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">💳 Faça o pagamento com segurança</h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed font-bold">Depois de confirmar a compra, seu acesso será liberado.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">📩</div>
+                    <h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">📩 Receba o material no seu e-mail</h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed font-bold">Você receberá as informações para acessar a Biblioteca de Exus e Pombagiras em Amigurumi.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">📱</div>
+                    <h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">📱 Acesse pelo celular, tablet ou computador</h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed font-bold">Você pode abrir o material de onde estiver, sempre que precisar.</p>
+                </div>
+                <div class="text-center sm:col-span-2 lg:col-span-1">
+                    <div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">🧶</div>
+                    <h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">🧶 Escolha o modelo e comece sua peça</h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed font-bold">Depois é só escolher a entidade, separar os materiais e começar a produzir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 9: PERGUNTAS FREQUENTES -->
+    <section class="bg-[#f7f2ea] py-16 sm:py-20 px-4 border-t border-black/5">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-zinc-900 text-center mb-10 sm:mb-12 text-balance leading-snug">DÚVIDAS FREQUENTES</h2>
+            <div class="space-y-3 sm:space-y-4 px-2 sm:px-0">
+                <details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm" open><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">1. Como vou receber a Biblioteca?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Você recebe o acesso de forma digital, pelo e-mail informado na compra.</div></details>
+                <details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm"><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">2. O que vem dentro da Biblioteca?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Você recebe mais de 100 modelos de Exus e Pombagiras em amigurumi, com receitas em PDF, fotos de referência e organização por entidade.</div></details>
+                <details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm"><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">3. Posso acessar pelo celular?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Sim. Você pode acessar pelo celular, tablet ou computador.</div></details>
+                <details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm"><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">4. Preciso ser expert em amigurumi?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Não. Mas é importante que você já tenha noção básica de crochê ou amigurumi para acompanhar melhor os modelos.</div></details>
+                <details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm"><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">5. Posso vender as peças que produzir?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Sim. Você pode usar os modelos para produzir peças para uso pessoal, presentes, coleção ou venda.</div></details>
+                <details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm"><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">6. Tem garantia?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Sim. Você tem 15 dias de garantia. Se sentir que o material não é para você, pode pedir o reembolso dentro desse prazo.</div></details>
+                <details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm"><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">7. O pagamento é seguro?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Sim. A compra é feita em ambiente seguro pela plataforma de pagamento.</div></details>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 10: RODAPÉ -->
+    <footer class="bg-[#3b1a0b] py-10 sm:py-12 px-4 border-t border-[#2a1208] text-center">
+        <div class="max-w-4xl mx-auto text-white/75 text-xs sm:text-sm space-y-3 sm:space-y-4">
+            <h4 class="font-bold text-white text-base sm:text-lg mb-1 sm:mb-2 text-balance">Biblioteca de Exus e Pombagiras em Amigurumi</h4>
+            <p class="flex items-center justify-center gap-3 sm:gap-4 whitespace-nowrap font-bold">
+                <span><i class="ph-fill ph-laptop"></i> Acesso digital</span>
+                <span>•</span>
+                <span><i class="ph-fill ph-shield-check"></i> 15 dias de garantia</span>
+            </p>
+            <div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/15 text-[10px] sm:text-xs text-white/60 font-bold">
+                <p class="text-balance px-4 leading-relaxed">
+                    Todos os direitos sobre a obra “Biblioteca de Exus e Pombagiras em Amigurumi” são reservados ao Biblioteca de Exus e Pombagiras em Amigurumi, nos termos da Lei nº 9.610/98 (Lei de Direitos Autorais). A reprodução não autorizada desta publicação, no todo ou em parte, por quaisquer meios, constitui violação dos direitos autorais (Art. 184 do Código Penal e Lei 9.610/98), sujeitando os infratores às sanções civis e criminais previstas na legislação aplicável.
+                </p>
+                <p class="mt-4 sm:mt-6 font-bold text-white/80 whitespace-nowrap">Compra segura. Acesso digital. 15 dias de garantia.</p>
+                <p class="mt-4 sm:mt-6 font-bold text-white/80 whitespace-nowrap">&copy; <span id="current-year"></span> Biblioteca de Exus e Pombagiras. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- NOTIFICAÇÃO DE VENDAS -->
+    <div id="sales-notification" class="fixed top-4 left-4 z-50 bg-white border border-zinc-200 p-2 sm:p-3 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.1)] flex items-center gap-3 sm:gap-4 transition-all duration-500 transform -translate-y-full opacity-0 max-w-[calc(100vw-2rem)] w-64 sm:w-72">
+        <div class="w-8 sm:w-10 h-8 sm:h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">
+            <i class="ph-fill ph-shopping-bag text-lg sm:text-xl"></i>
+        </div>
+        <div class="overflow-hidden">
+            <p class="text-xs sm:text-sm font-bold text-zinc-900 leading-tight truncate" id="buyer-name">Nome do Cliente</p>
+            <p class="text-[10px] sm:text-xs text-zinc-500 truncate font-bold">Acabou de comprar o acesso.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const today = new Date();
+            const dateEl = document.getElementById('dynamic-date');
+            const yearEl = document.getElementById('current-year');
+            if (dateEl) dateEl.textContent = today.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+            if (yearEl) yearEl.textContent = today.getFullYear();
+
+            const timerEl = document.getElementById('urgency-timer');
+            if (timerEl) {
+                let remainingSeconds = 10 * 60;
+                const renderTimer = () => {
+                    const minutes = String(Math.floor(remainingSeconds / 60)).padStart(2, '0');
+                    const seconds = String(remainingSeconds % 60).padStart(2, '0');
+                    timerEl.textContent = `${minutes}:${seconds}`;
+                };
+                renderTimer();
+                setInterval(() => {
+                    remainingSeconds = remainingSeconds > 0 ? remainingSeconds - 1 : 10 * 60;
+                    renderTimer();
+                }, 1000);
+            }
+        });
+
+        const buyers = [
+            "Mariana Alves - SP", "Ateliê Fio Sagrado", "Camila Rocha - MG",
+            "Artesã Ana Paula", "Juliana Santos - RJ", "Crochê com Propósito", "Fernanda Costa - PR", "Ateliê Rosa Vermelha"
+        ];
+        const notificationEl = document.getElementById('sales-notification');
+        const buyerNameEl = document.getElementById('buyer-name');
+
+        function triggerSaleNotification() {
+            if (!notificationEl || !buyerNameEl) return;
+            buyerNameEl.textContent = buyers[Math.floor(Math.random() * buyers.length)];
+            notificationEl.classList.remove('-translate-y-full', 'opacity-0');
+            setTimeout(() => notificationEl.classList.add('-translate-y-full', 'opacity-0'), 5000);
+        }
+
+        setTimeout(() => {
+            triggerSaleNotification();
+            setInterval(triggerSaleNotification, 20000);
+        }, 3000);
+
+        function setupAutoCarousel(carouselId, scrollSpeed = 1) {
+            const carousel = document.getElementById(carouselId);
+            if (!carousel) return;
+            let isPaused = false;
+            const originalItems = Array.from(carousel.children);
+            [...originalItems, ...originalItems].forEach(item => carousel.appendChild(item.cloneNode(true)));
+            if (scrollSpeed < 0) carousel.scrollLeft = carousel.scrollWidth / 2;
+            function scrollCarousel() {
+                if (!isPaused) {
+                    carousel.scrollLeft += scrollSpeed;
+                    if (carousel.scrollLeft >= carousel.scrollWidth / 2) carousel.scrollLeft = 0;
+                    if (carousel.scrollLeft <= 0 && scrollSpeed < 0) carousel.scrollLeft = carousel.scrollWidth / 2;
+                }
+                requestAnimationFrame(scrollCarousel);
+            }
+            carousel.addEventListener('mouseenter', () => { isPaused = true; });
+            carousel.addEventListener('mouseleave', () => { isPaused = false; });
+            carousel.addEventListener('touchstart', () => { isPaused = true; }, { passive: true });
+            carousel.addEventListener('touchend', () => { isPaused = false; });
+            requestAnimationFrame(scrollCarousel);
+        }
+
+        setupAutoCarousel('auto-carousel-top', 1);
+        setupAutoCarousel('auto-carousel-bottom', -1);
+
+        document.querySelectorAll('a[href="#oferta"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
